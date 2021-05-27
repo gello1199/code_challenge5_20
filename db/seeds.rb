@@ -8,6 +8,6 @@ GameBlog.find_or_create_by(name:"Codenames", img_url:"https://www.theboardgamefa
 
 GameBlog.find_or_create_by(name:"Dungeons and Dragons", img_url:"https://static.wikia.nocookie.net/allthetropes/images/a/ad/Dungeons_And_Dragons_Official_Poster.jpg/revision/latest?cb=20200625044141", rating:10, description: "The Dungeons & Dragons roleplaying game is about storytelling in worlds of sword and sorcery. It shares elements with childhood games of make-believe. ... In the Dungeons & Dragons game, each player creates an adventurer (also called a character) and teams up with other adventurers (played by friends).")
 
-User.find_or_create_by(name:"Robin Buckley")
-User.find_or_create_by(name:"Dustin Henderson")
-User.find_or_create_by(name:"Lucas Sinclair")
+# User.create(username:"Robin Buckley", password: "1234")
+# User.create(username:"Dustin Henderson", password: "1234")
+# User.create(username:"Lucas Sinclair", password: "1234")

@@ -2,6 +2,7 @@ class GameBlogsController < ApplicationController
 
   # GET: /game_blogs
   get "/game_blogs" do
+    @game_blogs = GameBlog.all
     erb :"/game_blogs/index.html"
   end
 
@@ -12,11 +13,15 @@ class GameBlogsController < ApplicationController
 
   # POST: /game_blogs
   post "/game_blogs" do
+    # binding.pry
+    @game_blog = GameBlog.new(params)
+    @game_blog.save
     redirect "/game_blogs"
   end
 
   # GET: /game_blogs/5
   get "/game_blogs/:id" do
+    @game_blog = GameBlog.find_by_id(params[:id])
     erb :"/game_blogs/show.html"
   end
 

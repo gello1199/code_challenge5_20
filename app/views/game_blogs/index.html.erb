@@ -1,1 +1,7 @@
 <h1>This is the Model's index page.</h1>
+
+<ul>
+<% @game_blogs.each do |t| %>
+<li><%= t.name %></li>
+<% end %>
+</ul>
